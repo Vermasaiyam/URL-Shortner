@@ -1,5 +1,9 @@
 const { getUser } = require("../services/auth");
 
+// function checkForAuthentication(req, res, next){
+
+// }
+
 async function restrictedToLoggedInUserOnly(req, res, next){
     const userUid = req.cookies?.uid;
 
