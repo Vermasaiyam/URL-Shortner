@@ -7,7 +7,7 @@ function checkForAuthentication(req, res, next){
         return next();
     } 
 
-    const token = tokenCookie.split("Bearer ")[1];
+    const token = tokenCookie;
 
     const user = getUser(token);
     req.user = user;
